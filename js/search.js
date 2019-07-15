@@ -14,9 +14,9 @@ String.prototype.replaceChars = function(character, replacement){
  
 function search(query){
     switch(query.substr(0, 2)){
-        case "-u":
+        case "-c":
             query = query.substr(3);
-            window.location = "https://userstyles.org/styles/browse?search_terms=" +
+            window.location = "https://www.crunchyroll.com/search?from=&q=" +
             query.replaceChars(" ", "+");
             break;
 
@@ -37,7 +37,7 @@ function search(query){
         case "-n":
             query = query.substr(3);
             window.location = 
-    	"https://www.nyaa.se/?page=search&cats=0_0&filter=0&term=" + 
+    	"https://nyaa.si/?f=0&c=0_0&q=" + 
     	query.replaceChars("+", "%2B");
     	break;
 
@@ -49,7 +49,7 @@ function search(query){
 	break;
 
         default:
-            window.location="https://www.google.fr/search?q=" +
+            window.location="https://duckduckgo.com/?q=" +
                 query.replaceChars("", "+");
     }
 }

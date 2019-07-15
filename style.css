@@ -173,6 +173,10 @@
 		padding: 17px 14px;
 		top: 114px;
 	}
+	#fourth-btn {
+		padding: 17px 14px;
+		top: 166px;
+	}
 	#click-btn:active .sidebar {
 		margin-left: 0px !important;
 	}
